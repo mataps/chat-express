@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat Client</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" href="/css/emoticons.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+	<div class="body">
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<form action="" class="6 login">
+					<span>Username: </span>
+					<span id="username" class="hidden"></span>
+					<input type="text"/>
+					<button type="submit" class="hidden"></button>
+				</form>
+				<form action="" class="6 room">
+					<span>Room: </span>
+					<span id="room" class="hidden"></span>
+					<input type="text"/>
+					<button type="submit" class="hidden"></button>
+				</form>
+			</div>
+		</div>
+		<div class="chat-box">
+			<!-- chat content -->
+			<div class="chat-content">
+			</div>
+			<!-- chat input-->
+			<div class="chat-input clearfix">
+				<textarea class="input-block-level"></textarea>
+				<a href="#" class="send-btn pull-right">Send</a>					
+			</div>									
+		</div>
+	<script type="text/javascript" src="/js/script.js"></script>
+</body>
+</html>
